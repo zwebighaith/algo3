@@ -1,0 +1,92 @@
+	Procédure dot_product (V1[],V2[]  : réel) 
+
+		Variables
+		Ps:réel
+
+		Debut 
+
+		Ps<--0
+		pour i= 0 a n  pas 1 faire 
+		Ps <-- Ps + V1[i] * V2[i]
+		Fin pour
+
+		Si (n mod 2 == 0 et Ps ==0)
+		Ecrire("les deux Vecteurs V1 et V2 sont orthogonaux!!!" Ps )
+		sinon
+		Ecrire ("les deux Vecteurs ne sont pas orthogonaux et Produit scalaire est "Ps)
+
+		Fin
+
+ Variables 
+  V1,V2: tableau [1..100] de réel
+  n,i :entier
+  Debut
+
+		Ecrire ("donner Le taille du n")
+
+		Lire (N)
+
+		pour i=0 a N faire 
+		Ecrire ("donner L'element ", i+1,"du Vecteur V1")
+		lire (V1[i])
+
+		Ecrire ("donner L'element ", i+1,"du Vecteur V2")
+		lire (V2[i])
+		Fin pour
+
+		dot_product(V1,V2)
+
+
+
+
+Fin
+
+//3éme question changer le procedure dot_product en  fonction
+
+
+Agorithme challenge
+
+ 
+		fonction dot_product (V1[],V2[]  : réel):réel 
+
+		Variables
+		Ps:réel
+
+		Debut 
+
+		Ps<--0
+		pour i= 0 a n  pas 1 faire 
+		Ps <-- Ps + V1[i] * V2[i]
+		Fin pour
+
+		Si (n mod 2 == 0 et Ps ==0)
+		Ecrire("les deux Vecteurs V1 et V2 sont orthogonaux!!!" Ps )
+		sinon
+		Ecrire ("les deux Vecteurs ne sont pas orthogonaux et Produit scalaire est "Ps)
+
+        Retourne Ps
+		Fin
+
+ Variables 
+  V1,V2: tableau [1..100] de réel
+  n,i :entier
+  Debut
+
+		Ecrire ("donner Le taille du n")
+
+		Lire (N)
+
+		pour i=0 a N faire 
+		Ecrire ("donner L'element ", i+1,"du Vecteur V1")
+		lire (V1[i])
+
+		Ecrire ("donner L'element ", i+1,"du Vecteur V2")
+		lire (V2[i])
+		Fin pour
+
+		Ecrire("Le produit scalaire de deux Vecteurs est :" dot_product(V1,V2) )
+
+
+
+
+Fin
